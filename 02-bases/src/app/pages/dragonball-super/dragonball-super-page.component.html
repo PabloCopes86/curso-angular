@@ -1,0 +1,21 @@
+<h1>Página de Dragonball</h1>
+<section class="row">
+  <div class="col-12 col-sm-6">
+    <!-- output sale el new character hacia el add
+         del componente character-list
+         newCharacter = output<Character>() (dentro); -->
+    <dragonball-character-add
+      (newCharacter)="dragonballService.addCharacter($event)"
+    />
+  </div>
+
+  <div class="col-12 col-sm-6">
+    <!-- inputs mando desde afuera hacia adentro del componente.
+         characters = input.required<Character[]>();(dentro)
+         listName = input.required<string>(); (dentro)-->
+    <dragonball-character-list
+      listName="Listado de personajes"
+      [characters]="dragonballService.characters()"
+    />
+  </div>
+</section>

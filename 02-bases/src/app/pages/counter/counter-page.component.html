@@ -1,7 +1,7 @@
 <h1>Counter Page</h1>
 <hr />
 <!-- <p>Counter: {{ counter }}</p> -->
-<p>Counter: {{ counterSignal() }}</p>
-<button (click)="increaseBy(1)">+</button>
-<button (click)="resetCounter()">Reset</button>
-<button (click)="increaseBy(-1)">-</button>
+<h2>Counter: {{ counterSignal() }}</h2>
+<button class="btn btn-outline-primary" (click)="increaseBy(1)">+</button>
+<button class="btn btn-primary mx-2" (click)="resetCounter()">Reset</button>
+<button class="btn btn-outline-primary" (click)="increaseBy(-1)">-</button>

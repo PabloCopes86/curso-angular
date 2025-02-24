@@ -1,0 +1,33 @@
+<style>
+  nav a.active {
+    color: #f00 !important;
+  }
+</style>
+
+<nav class="d-flex justify-content-around bg-dark p-2">
+  <a
+    class="text-decoration-none text-light"
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Contador</a
+  >
+  <a
+    class="text-decoration-none text-light"
+    [routerLink]="['/hero']"
+    [routerLinkActive]="'active'"
+    >Hero</a
+  >
+  <a
+    class="text-decoration-none text-light"
+    [routerLink]="['/dragonball']"
+    [routerLinkActive]="'active'"
+    >Dragonball</a
+  >
+  <a
+    class="text-decoration-none text-light"
+    routerLink="/dragonball-super"
+    routerLinkActive="active"
+    >Dragonball Super</a
+  >
+</nav>
